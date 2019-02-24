@@ -2,11 +2,19 @@
   "name": "mockserver",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "10.x"
+  },
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "client": "cd ../react-client && npm start",
     "server": "nodemon app.js",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ravikeshpr/superheroes"
   },
   "author": "",
   "license": "ISC",
